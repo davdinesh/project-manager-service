@@ -2,6 +2,7 @@ package com.learn.pmapp;
 
 import java.io.IOException;
 
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.json.JsonParseException;
@@ -39,6 +40,11 @@ public class ProjManagerApplicationTests {
 
 		ObjectMapper objectMapper = new ObjectMapper();
 		return objectMapper.readValue(json, clazz);
+	}
+	
+	@Test
+	public void test_setup() {
+		
 	}
 }
 
